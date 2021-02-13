@@ -3,6 +3,10 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import Homescreen from './components/screens/homescreen'
+import Mapscreen from './components/screens/mapscreen'
+import Accountscreen from './components/screens/accountscreen'
+
 function HomeScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
