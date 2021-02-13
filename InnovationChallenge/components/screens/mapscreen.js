@@ -10,7 +10,7 @@ export const getCurrentLocation = () => {
       navigator.geolocation.getCurrentPosition(position => resolve(position), e => reject(e));
     });
 };
-  
+
 var UserLocation = {
     latitude: 0,
     longitude: 10,

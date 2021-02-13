@@ -25,7 +25,7 @@ export default function App() {
             } else if (route.name === 'Map') {
               iconName = focused ? 'ios-map' : 'ios-map';
             } else if (route.name === 'Account') {
-              iconName = focused ? 'ios-list-box' : 'ios-list-box';
+              iconName = focused ? 'ion-ios-person' : 'ion-ios-person';
             }
 
             // You can return any component that you like here!
