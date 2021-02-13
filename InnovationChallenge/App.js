@@ -22,8 +22,10 @@ export default function App() {
               iconName = focused
                 ? 'ios-information-circle'
                 : 'ios-information-circle-outline';
-            } else if (route.name === 'Settings') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
+            } else if (route.name === 'Map') {
+              iconName = focused ? 'ios-map' : 'ios-map';
+            } else if (route.name === 'Account') {
+              iconName = focused ? 'ios-list-box' : 'ios-list-box';
             }
 
             // You can return any component that you like here!
@@ -31,13 +33,13 @@ export default function App() {
           },
         })}
         tabBarOptions={{
-          activeTintColor: 'tomato',
+          activeTintColor: 'crimson',
           inactiveTintColor: 'gray',
         }}
       >
         <Tab.Screen name="Home" component={Homescreen} />
         <Tab.Screen name="Map" component={Mapscreen} />
-        <Tab.Screen name="Manage Account" component={Accountscreen} />
+        <Tab.Screen name="Account" component={Accountscreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
