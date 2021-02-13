@@ -20,11 +20,6 @@ export default class QRGenerator extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TextInput
-          style={styles.input}
-          onChangeText={(text) => this.setState({text: text})}
-          value={this.state.text}
-        />
         <QRCode
           value={this.state.text}
           size={200}
