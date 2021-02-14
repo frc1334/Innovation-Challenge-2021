@@ -8,6 +8,7 @@ import Homescreen from './components/screens/homescreen'
 import Mapscreen from './components/screens/mapscreen'
 import Accountscreen from './components/screens/accountscreen'
 
+import AuthComponent from './components/authcomponent'
 import QRCodeGenerator from './components/qrcodegenerator'
 
 const Tab = createBottomTabNavigator();
@@ -41,7 +42,7 @@ export default function App() {
       >
         <Tab.Screen name="Home" component={Homescreen} />
         <Tab.Screen name="Map" component={Mapscreen} />
-        <Tab.Screen name="Account" component={QRCodeGenerator} />
+        <Tab.Screen name="Account" component={AuthComponent} />
       </Tab.Navigator>
     </NavigationContainer>
   );
