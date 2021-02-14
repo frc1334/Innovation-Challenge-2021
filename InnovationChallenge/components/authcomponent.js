@@ -1,21 +1,10 @@
 
 // authcomponent.js
 
-import firebaseConfig from "./firebase-init"
+import { firebase, auth, firestore } from "./firebase"
 
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button, TextInput,TouchableOpacity } from 'react-native';
-
-import * as firebase from 'firebase';
-import "firebase/auth";
-import "firebase/firestore";
-
-// Initialize the firebase app
-if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
-} else {
-    firebase.app(); // if already initialized, use that one
-}
 
 export default class AuthComponent extends Component {
     

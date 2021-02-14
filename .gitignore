@@ -1,7 +1,7 @@
 
 # Firebase keys
 web/public/js/firebase-init.js
-innovationchallenge/components/firebase-init.js
+innovationchallenge/firebase.js
 
 # OSX
 #
