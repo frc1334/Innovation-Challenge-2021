@@ -1,7 +1,8 @@
 
 // authcomponent.js
 
-import { firebase, auth, firestore } from "./firebase"
+import firebase from "../firebase"
+import "firebase/auth";
 
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button, TextInput,TouchableOpacity } from 'react-native';
